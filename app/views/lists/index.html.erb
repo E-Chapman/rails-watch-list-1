@@ -1,6 +1,7 @@
+<div class="list-index">
 <div class="cover mb-4 d-flex align-items-center justify-content-center">
   <div class="text-center text-white">
-    <h1>Save any kind of movies</h1>
+    <h1>Save your favourite movies!</h1>
     <h3 class="typed-js" data-controller="typed-js"></h3>
   </div>
 </div>
@@ -13,7 +14,7 @@
     <% @lists.each do |list| %>
       <div class="co-12 col-sm-6 col-md-4 mb-3">
         <%= link_to list_path(list), class:"text-decoration-none" do %>
-          <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('list_background.jpg') %>)">
+          <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(315deg, #f6d327 0%, #de4daa 74%), url(<%= asset_path('posters.jpg') %>)">
             <%= list.name %>
           </div>
         <% end %>
@@ -21,3 +22,6 @@
     <% end %>
   </div>
 </div>
+<div>
+
+
